@@ -17,7 +17,7 @@ knitr::opts_chunk$set(echo = TRUE)
 ```
 
 
-```{r}
+```{r, include=FALSE}
 spamdatabase.df <- data.frame(fread("https://archive.ics.uci.edu/ml/machine-learning-databases/spambase/spambase.data",))
 colnames(spamdatabase.df) <- c ( 
   "word_freq_make", 
